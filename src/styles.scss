@@ -1,0 +1,27 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "./app/common/colors.scss";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins";
+  background: $dark;
+  color: #fff;
+  font-weight: 300;
+}
+
+input {
+  background: $mid-blue;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 15px;
+  width: 100%;
+  color: #fff;
+}
+
+input:focus {
+  border: none;
+  outline: none;
+}
