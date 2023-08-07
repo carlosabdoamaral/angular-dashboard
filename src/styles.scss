@@ -2,14 +2,40 @@
 
 @import "./app/common/colors.scss";
 
+html {
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
   font-family: "Poppins";
-  background: $dark;
   color: #fff;
   font-weight: 300;
+  padding: 0 2dvw;
+
+  min-height: 100dvh;
+  background-color: #26004d;
+  background-image: radial-gradient(
+      at 54% 67%,
+      hsla(6, 87%, 70%, 1) 0,
+      hsla(6, 87%, 70%, 0) 50%
+    ),
+    radial-gradient(
+      at 25% 95%,
+      hsla(256, 88%, 65%, 1) 0,
+      hsla(256, 88%, 65%, 0) 50%
+    ),
+    radial-gradient(
+      at 84% 58%,
+      hsla(254, 86%, 65%, 1) 0,
+      hsla(254, 86%, 65%, 0) 50%
+    ),
+    radial-gradient(
+      at 8% 60%,
+      hsla(291, 88%, 69%, 1) 0,
+      hsla(291, 88%, 69%, 0) 50%
+    );
 }
 
 input {
@@ -24,4 +50,17 @@ input {
 input:focus {
   border: none;
   outline: none;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+
+  p {
+    font-weight: 400;
+    font-size: 1.4rem;
+  }
 }

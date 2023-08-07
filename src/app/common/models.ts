@@ -11,7 +11,8 @@ export interface AccountModel {
     notifications: NotificationModel[]
     amount: number // soma dos valores do portfolio
     portfolio: StockModel[]
-    watchlist: StockModel[]
+    watchlist: StockModel[],
+    dailyReportList: DailyReportModel[]
 }
 
 export interface StockModel {
@@ -23,3 +24,7 @@ export interface StockModel {
     currentAmount: number
 }
 
+export interface DailyReportModel {
+    x: Date,
+    y: number
+}

@@ -1,0 +1,12 @@
+<div class="content">
+  <div class="header">
+    <p>My Watchlist</p>
+  </div>
+
+  <div class="portfolio-list">
+    <app-watchlist-item
+      *ngFor="let stock of account?.watchlist"
+      [stock]="stock"
+    />
+  </div>
+</div>

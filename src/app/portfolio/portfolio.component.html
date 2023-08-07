@@ -1,0 +1,12 @@
+<div class="content">
+  <div class="header">
+    <p>My Portfolio</p>
+  </div>
+
+  <div class="portfolio-list">
+    <app-portfolio-item
+      *ngFor="let stock of account?.portfolio"
+      [stock]="stock"
+    />
+  </div>
+</div>

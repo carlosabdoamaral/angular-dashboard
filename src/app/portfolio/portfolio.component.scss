@@ -1,0 +1,9 @@
+@import "../common/colors.scss";
+
+.portfolio-list {
+  background: $dark-blue;
+  width: 60dvw;
+  height: 30dvh;
+  overflow-y: scroll;
+  padding: 1em;
+}

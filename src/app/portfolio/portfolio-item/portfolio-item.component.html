@@ -1,0 +1,36 @@
+<div class="content">
+  <div class="portfolio-item">
+    <div>
+      <p>{{ stock?.tag }}</p>
+      <small>{{ stock?.enterpriseName }}</small>
+    </div>
+
+    <div>
+      <small>Share amount</small>
+      <p>{{ stock?.shareAmount }}</p>
+    </div>
+
+    <div>
+      <small>Price</small>
+      <p>$ {{ stock?.price }}</p>
+    </div>
+
+    <div>
+      <small>Change</small>
+      <p *ngIf="stock!.change >= 0" style="color: rgb(82, 162, 97)">
+        {{ stock?.change }}
+      </p>
+      <p *ngIf="stock!.change < 0" style="color: rgb(208, 94, 89)">
+        {{ stock?.change }}
+      </p>
+    </div>
+
+    <div>
+      <small>Current value</small>
+      <p>$ {{ stock?.currentAmount }}</p>
+    </div>
+  </div>
+
+  <hr />
+  
+</div>

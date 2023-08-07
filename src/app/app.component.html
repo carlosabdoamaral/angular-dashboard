@@ -1,1 +1,10 @@
-<app-topbar [account]="accountMock"></app-topbar>
+<div class="content">
+  <div class="topbar"><app-topbar [account]="accountMock"></app-topbar></div>
+  <div class="chart">
+    <app-daily-report [account]="accountMock"></app-daily-report>
+  </div>
+  <div class="lists">
+    <app-portfolio [account]="accountMock"></app-portfolio
+    ><app-watchlist [account]="accountMock"></app-watchlist>
+  </div>
+</div>

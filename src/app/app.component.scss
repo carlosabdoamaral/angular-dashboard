@@ -1,1 +1,15 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 2dvh;
+}
 
+.chart {
+  margin-top: 30px;
+}
+
+.lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
